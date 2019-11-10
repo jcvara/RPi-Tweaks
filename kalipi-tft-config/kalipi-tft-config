@@ -1804,7 +1804,7 @@ EOF
     # install hyperpixel4 init service
     info PI-TFT "Installing HyperPixel 4 service"
     if [ ! -f /usr/bin/hyperpixel4-init ]; then
-        wget -O /usr/bin/hyperpixel4-init https://github.com/pimoroni/hyperpixel4/raw/master/dist/hyperpixel4-init
+        wget -O /usr/bin/hyperpixel4-init https://raw.githubusercontent.com/pimoroni/hyperpixel4/pi3/dist/hyperpixel4-init
 	if [ ! $? == 0 ]; then
             whiptail --msgbox "\
 Error:
